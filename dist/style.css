@@ -609,6 +609,10 @@
   margin-right: 2rem;
 }
 
+.footer .footer__wrapper .footer__icons ul li a:hover{
+color: #ffa700;
+}
+
 .footer .footer__wrapper .footer__text{
   color: #ffffff;
   margin-right: 4rem;
@@ -671,9 +675,11 @@
   font-size: 7rem;
   color: #ffa700;
   justify-content: center;
-  display: flex;
-  
-  
+  display: flex; 
+}
+
+.about-banner .fa-chevron-down:hover{
+  color: #2b2b22;
 }
 
 .about-banner .about-banner__wrapper .about-banner__text h1{
@@ -693,6 +699,10 @@ margin-top: 3rem;
   color: #ffa700;
   margin-right: 2rem;
   font-size: 3rem;
+  
+}
+.about-banner .about-banner__wrapper .about-banner__text ul li a:hover{
+  color: #2b2b22;
   
 }
 
