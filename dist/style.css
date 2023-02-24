@@ -1060,23 +1060,39 @@ margin-right: 2rem;
 /*---------------Services--------------------------*/
 .services{
   padding: 10rem 0;
+  padding-bottom: 1rem;
+}
+
+.services2{
+  padding-bottom: 5rem;
   
 }
 
 .services__title{
   color: #2b2b22;
+  
+}
+
+.services .services__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 10rem;
 }
 
-.services .services__wrapper,
+.services .services__wrapper:last-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+}
 .services2 .services__wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.services2 .services__wrapper{
   flex-direction: row-reverse;
+  padding-top: 10rem;
 }
 
 .services2 {
@@ -1109,11 +1125,12 @@ margin-top: 8rem;
 
 .services__pricing h4{
   color: #ffa700;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .services__pricing p{
-width: 30%;
+width: 38%;
 }
 
 .fa-chevron-down{
@@ -1121,24 +1138,56 @@ width: 30%;
   color: #ffa700;
   justify-content: center;
   display: flex; 
-  margin-top: 10rem;
+  margin-top: 12rem;
+}
+
+.services2 .fa-chevron-down{
+  font-size: 4rem;
+  color: #ffa700;
+  justify-content: center;
+  display: flex; 
+  margin-top: 12rem;
+}
+
+.services2 .fa-chevron-down:hover{
+  font-size: 4rem;
+  color: #ffffff;
+  justify-content: center;
+  display: flex; 
+  margin-top: 12rem;
 }
 
 .fa-chevron-down:hover{
   color: #2b2b22;
+  
 }
+
 
 
 @media screen and (max-width:500px){
   .services{
-    padding: 15rem 0;
+    padding: 10rem 0;
+    padding-bottom: 3rem;
   }
+
+
   .services2{
-    padding: 5rem 0;
+    padding: 0 0;
+    padding-bottom: 2rem;
   }
 
   .services .services__wrapper{
     flex-direction: column-reverse;
+
+  }
+
+
+  .services .services__pricing{
+    padding: 0 2rem;
+  }
+
+  .services2 .services__pricing{
+    padding: 0 2rem;
   }
 
   .services .services__wrapper .services__title{
@@ -1152,6 +1201,121 @@ width: 30%;
   }
 
 }
+
+/*--------------Contacts--------------------------*/
+.contacts{
+  background: #2b2b22;
+  padding: 5rem 0;
+  padding-top: 15rem;
+  border-bottom: 1px solid white;
+}
+
+.header-con{
+  box-shadow: 0 1px 10px rgb(0, 0, 0, .2);
+}
+
+.contacts .contacts__wrapper{
+  padding: 5rem 0;
+  display: flex;
+  
+  
+}
+
+.contacts .contacts__left h2{
+  color: #ffa700;
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.contacts .contacts__left p{
+  color: white;
+  width: 70%;
+  padding: 4rem 0;
+  padding-bottom: 5rem;
+}
+
+.contacts .contacts__left .contacts__icon_text ul li i{
+  color: #ffa700;
+  font-size: 3rem;
+  padding-right: 3rem;
+
+}
+
+.contacts .contacts__left .contacts__icon_text ul li{
+  color:#ffffff;
+  width: 70%;
+  padding: 2rem 0;
+}
+
+.contacts .contacts__left .contacts__socialmedia ul{
+  color:#ffffff;
+  font-size: 3.5rem;
+  display: flex;
+  
+}
+
+.contacts .contacts__left .contacts__socialmedia ul li:hover{
+  color:#ffa700;
+  font-size: 3.5rem;
+  display: flex;
+  
+}
+
+.contacts .contacts__left .contacts__socialmedia ul li{
+  padding-right: 2rem;
+  margin-top: 2rem;
+}
+
+
+
+
+#name-input{
+  color: #2b2b22;
+  padding: 2rem 0;
+  width: 100%;
+  
+}
+
+#email-input{
+  color: #2b2b22;
+  padding: 2rem 0;
+  width: 100%;
+  
+}
+
+#message-input{
+  color: #2b2b22;
+  padding: 1rem 0;
+  padding-bottom: 15rem;
+  width: 100%;
+}
+
+.contacts .contacts__textbox ul li{
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+}
+
+.contacts .contacts__textbox ul{
+margin-top: 10rem;
+}
+
+.contacts .contacts__textbox a{
+  float: right;
+  margin-top: 2rem;
+  }
+
+
+  @media screen and (max-width:500px){
+    .contacts{
+      padding: 10rem 0;
+      padding-bottom: 3rem;
+    }
+
+    .contacts .contacts__wrapper{
+      flex-direction: coloumn-reverse;
+    }
+  }
 
 /*--------------Repeatable Patterns---------------*/
 
@@ -1175,7 +1339,17 @@ width: 30%;
   border: 2px solid #2b2b22;
 }
 
+.bg--yellowtowhite{
+  background: #ffa700;
+  color: #ffffff;
+  border: 2px solid #2b2b22;
+}
 
+.bg--yellowtowhite:hover{
+  background: #ffffff;
+  color: #2b2b22;
+  border: 2px solid #2b2b22;
+}
 
 .bg--yellow{
   background: #ffa700;
